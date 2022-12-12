@@ -162,7 +162,11 @@ public interface ISettings extends IConf {
 
     boolean warnOnSmite();
 
-    BigDecimal getMaxMoney();
+    Set<String> getMultipleMoneyCaps();
+
+    BigDecimal getMoneyCap(User user);
+
+    BigDecimal getMoneyCap(String set);
 
     BigDecimal getMinMoney();
 
